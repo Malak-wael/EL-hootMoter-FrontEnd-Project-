@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--  Start navbar -->
+  <nav>
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="logo">EL Hoot Motors</div>
+    <div class="nav-links">
+      <a href="./home.html" class="active">Home</a>
+      <a href="./products/products.html">Product</a>
+      <a href="./aboute/about.html">About</a>
+      <a href="./contact/contact.html">Contact</a>
+      <a href="./offers/offers.html">Offers</a>
+    </div>
+    <div class="nav-icons">
+      <div class="search-box">
+        <input type="text" placeholder="What are you loking for ?">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="icon">
+        <a href="favorite_products.html"><i class="fa-regular fa-heart"></i></a>
+        <span class="badge">3</span>
+      </div>
+
+      <div class="icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="badge">2</span>
+      </div>
+      <div class="user-icon">
+        <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+        <span class="badge">7</span>
+      </div>
+    </div>
+    <script>
+      const nav = document.querySelector("nav");
+      const menuToggle = document.querySelector(".menu-toggle");
+
+      menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+
+  </nav>
+  <!--  End navbar -->
+
+  <!-- Start Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CMG-4 <br> MotoCyle</h1>
+      <p>One of The Best Motorcycles <br> High engine Power .</p>
+      <div class="hero_btns">
+        <button class="btn1 ">View details</button>
+        <button class="btn2 ">Lern more</button>
+      </div>
+    </div>
+  </section>
+  <!-- Start Hero Section -->
+  <!-- Why Choosing Section -->
+  <section class="why">
+    <div class="reasons">
+      <h2><span>Why</span> <br> Choosing El Wakeel</h2>
+      <div class="reason">
+        <h3>On efficiency</h3>
+        <p>The most efficient King motor – the original lifan motor</p>
+      </div>
+      <div class="reason">
+        <h3>Competitive price</h3>
+        <p>Very economical price for the quality of manufacturing</p>
+      </div>
+      <div class="reason">
+        <h3>Recovery policy</h3>
+        <p>Product invoice within one, two, or three days maximum</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Selling Product -->
+  <section class="products">
+    <h2>Best Selling Product</h2>
+    <div class="tags">
+      <span>cmg</span>
+      <span>HAOJIN</span>
+      <span>haunid</span>
+      <span>cmg</span>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="cycle1.jpeg" alt="motorcycle">
+        <div class="info">
+          <p class="type">motorcycle</p>
+          <h3>CMG_4</h3>
+          <div class="stars">★★★★★</div>
+          <div class="bottom">
+            <p>25000 E£</p>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cycle1.jpeg" alt="motorcycle">
+        <div class="info">
+          <p class="type">motorcycle</p>
+          <h3>CMG_4</h3>
+          <div class="stars">★★★★★</div>
+          <div class="bottom">
+            <p>25000 E£</p>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cycle1.jpeg" alt="motorcycle">
+        <div class="info">
+          <p class="type">motorcycle</p>
+          <h3>CMG_4</h3>
+          <div class="stars">★★★★★</div>
+          <div class="bottom">
+            <p>25000 E£</p>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cycle1.jpeg" alt="motorcycle">
+        <div class="info">
+          <p class="type">motorcycle</p>
+          <h3>CMG_4</h3>
+          <div class="stars">★★★★★</div>
+          <div class="bottom">
+            <p>25000 E£</p>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <div class="img-box">
+      <img src="cycle1.jpeg" alt="bike">
+    </div>
+    <div class="text">
+      <h4>EXPERIENCES</h4>
+      <h2>We Provide You The Best Experience</h2>
+      <p>The motorcycle offers superior performance, top speed, and durability. Our team ensures every customer gets the
+        highest quality product and service.</p>
+    </div>
+  </section>
+
+
+
+  <section>
+    <div class="container">
+      <div class="left-column">
+        <div class="material">Materials</div>
+        <h2>Original CMB Gearboxes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et felis nec odio consequat dapibus. Integer
+          vitae lorem ut purus vehicula bibendum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in
+          quibusdam voluptates molestias dolorem alias nam corrupti rem reiciendis reprehenderit est neque eaque omnis
+          quas, non, inventore aliquid doloribus id.</p>
+      </div>
+      <div class="right-column">
+        <div class="small-imgs">
+          <img src="cycle2.jpg" alt="Small Image 1">
+          <img src="cycle1.jpeg" alt="Small Image 2">
+        </div>
+        <div class="big-img">
+          <img src="cycle1.jpeg" alt="Big Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Client Reviews -->
+  <section class="client-reviews">
+    <div class="container">
+      <div class="row g-4">
+        <h2 class="text-center mb-5">Our Client Reviews</h2>
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="users/u1.jpg" alt="Client 1">
+            <div class="inner">
+              <h5>John Doe</h5>
+              <p class="text-warning">★★★★★</p>
+              <p>Fantastic experience! Sold my motorcycle in one day with great price.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="users/u2.jpeg" alt="Client 2">
+            <div class="inner">
+              <h5>Michael Smith</h5>
+              <p class="text-warning">★★★★★</p>
+              <p>Very professional service and smooth process. Totally satisfied!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="users/u5.avif" alt="Client 3">
+            <div class="inner">
+              <h5>Ali Hassan</h5>
+              <p class="text-warning">★★★★★</p>
+              <p>Quick payment and great communication. Highly recommended!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Brands -->
+  <section class="container_brand py-5 text-center">
+    <div class="brand_head">
+      <h3>Explore Our Premium Brands</h3>
+      <a href="">show all prands</a>
+    </div>
+    <div class="container brand-logos mt-4">
+      <div class="card">
+        <img src="car_brands/bmw.png" alt="Suzuki" class="img-fluid">
+        <p>brand bmw</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/borch.png" alt="Ducati" class="img-fluid">
+        <p>brand borch</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/aqui.png" alt="Suzuki" class="img-fluid">
+        <p>brand aqui</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/marsedic.png" alt="Triumph" class="img-fluid">
+        <p>brand marcedes</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/Toyota.jpg" alt="Yamaha" class="img-fluid">
+        <p>brand tyota</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/aqui.png" alt="BMW" class="img-fluid">
+        <p>brand aqui</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/borch.png" alt="Kawasaki" class="img-fluid">
+        <p>brand borch</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/bmw.png" alt="Royal Enfield" class="img-fluid">
+        <p>brand bmw</p>
+      </div>
+      <div class="card">
+        <img src="car_brands/bmw.png" alt="Suzuki" class="img-fluid">
+        <p>brand bmw</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About El Wakeel -->
+  <section class="about-section mb-5">
+    <div class="container">
+  
+      
+      <!-- الصف الأول -->
+      <div class="row align-items-center">
+        <h3 class="text-center mb-4">About El Wakeel</h3>
+  
+        <!-- الفيديو -->
+        <div class="col-md-6 mb-4">
+          <video controls poster="cycle2.jpg">
+            <source src="video/motorcycle.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+  
+        <!-- الكلام -->
+        <div class="col-md-6 mb-4">
+          <h4>Get A Fair Price For Your Motorcycle! Sell To Us Today</h4>
+          <p class="mt-3">
+            We provide transparent evaluation and instant purchase service for motorcycles.
+            Trusted by thousands of riders across the country.
+          </p>
+          <a href="#" class="btn btn-primary mt-2">Learn More</a>
+        </div>
+  
+      </div>
+  
+      <!-- الصف الثاني / الإحصائيات -->
+      <div class="stats">
+        <div class="stat">
+          <h4>10+</h4>
+          <p>Motorcycle Brands</p>
+        </div>
+        <div class="stat">
+          <h4>1500+</h4>
+          <p>Reviews</p>
+        </div>
+        <div class="stat">
+          <h4>10000K+</h4>
+          <p>Clients</p>
+        </div>
+        <div class="stat">
+          <h4>238M+</h4>
+          <p>Reach</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- What Clients Say -->
+  <section class="py-5 testimonial">
+    <div class="container testimonial">
+      <div class="row g-4">
+        <h2 class="text-center mb-5 mt-5">What Clients Say</h2>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="./users/u1.jpg" alt="Client 1">
+            <h6>Ahmed Nasser</h6>
+            <p class="text-warning">★★★★★</p>
+            <p>Outstanding support and fair pricing. Smooth process from start to finish!</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="./users/u2.jpeg" alt="Client 2">
+            <h6>Sarah Ahmed</h6>
+            <p class="text-warning">★★★★★</p>
+            <p>Sold my bike the same day! Highly professional and efficient team.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="./users/u3.jpg" alt="Client 3">
+            <h6>Mohamed Khaled</h6>
+            <p class="text-warning">★★★★★</p>
+            <p>Great experience overall, would definitely recommend El Wakeel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="features-section py-5">
+    <div class="container_features">
+      <div class="row text-center justify-content-center g-4">
+
+        <div class="col-12 col-md-4">
+          <div class="feature-item">
+            <div class="icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <h5 class="title mt-3">FREE AND FAST DELIVERY</h5>
+            <p class="desc">Free delivery for all orders over $140</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="feature-item">
+            <div class="icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h5 class="title mt-3">24/7 CUSTOMER SERVICE</h5>
+            <p class="desc">Friendly 24/7 customer support</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="feature-item">
+            <div class="icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h5 class="title mt-3">MONEY BACK GUARANTEE</h5>
+            <p class="desc">We return money within 30 days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Location and Time -->
+  <section class="location-time py-5">
+    <div class="containerr">
+      <h2 class="mb-4 fw-semibold">Location And Time</h2>
+
+
+      <div class="map-wrapper position-relative">
+        <!-- Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.960650889958!2d31.235711!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1610721000000!5m2!1sen!2seg"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- Floating Contact Box -->
+        <div class="contact-box shadow-lg bg-white p-4 rounded position-absolute top-50 start-50 translate-middle">
+          <h4 class="fw-semibold mb-2">Get in Touch</h4>
+          <p class="text-muted mb-3">Contact our Sales Department</p>
+          <div class="d-flex align-items-center mb-3 border rounded px-2 py-2">
+            <i class="bi bi-telephone text-primary me-2"></i>
+            <span>+201009896263</span>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li>Monday: 10:00–10:00</li>
+            <li>Tuesday: 10:00–10:00</li>
+            <li>Wednesday: 10:00–10:00</li>
+            <li>Thursday: 10:00–10:00</li>
+            <li>Friday: <strong class="text-danger">CLOSED</strong></li>
+            <li>Saturday: 10:00–10:00</li>
+            <li>Sunday: 10:00–10:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer  text-white pt-5 pb-4">
+    <div class="container_footer">
+      <div class="row gy-4">
+        <!-- El Wakeel / Subscribe -->
+        <div class="col-md-3">
+          <h5 class="fw-semibold mb-3">El Wakeel</h5>
+          <p class="text-white-50 mb-3">Subscribe</p>
+          <p class="text-white-50">Get 10% off your first order</p>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Enter your email">
+            <button class="btn btn-primary">→</button>
+          </form>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Company</h6>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Quick Links</h6>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none">Get In Touch</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Help Center</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Live Chat</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Brands -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Our Brands</h6>
+          <ul class="list-unstyled text-white-50">
+            <li>Suzuki</li>
+            <li>Harley-Davidson</li>
+            <li>Kawasaki</li>
+            <li>Ducati</li>
+            <li>Peugeot</li>
+            <li>Volkswagen</li>
+          </ul>
+        </div>
+
+        <!-- Sale Hours -->
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3">Sale Hours</h6>
+          <ul class="list-unstyled text-white-50">
+            <li>Monday – Friday: 09:00AM – 06:00PM</li>
+            <li>Saturday: 09:00AM – 07:00PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+
+</html>

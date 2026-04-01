@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product_motorCycle</title>
+  <link rel="stylesheet" href="product_tricycle.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+</head>
+
+<body>
+  <!--  Start navbar -->
+  <nav>
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="logo">EL Hoot Motors</div>
+    <div class="nav-links">
+        <a href="/Users/apple/Desktop/hoot moter_user/home.html">Home</a>
+        <a href="../products.html" class="active">Product</a>
+        <a href="/Users/apple/Desktop/hoot moter_user/aboute/about.html">About</a>
+        <a href="/Users/apple/Desktop/hoot moter_user/contact/contact.html">Contact</a>
+        <a href="/Users/apple/Desktop/hoot moter_user/offers/offers.html">Offers</a>
+    </div>
+    <div class="nav-icons">
+      <div class="search-box">
+        <input type="text" placeholder="What are you loking for ?">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="icon">
+        <a href="/Users/apple/Desktop/hoot moter_user/favorite_products.html"><i class="fa-regular fa-heart" ></i></a>
+        <span class="badge">3</span>
+      </div>
+
+      <div class="icon">
+        <a href="/Users/apple/Desktop/hoot moter_user/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <span class="badge">2</span>
+      </div>
+      <div class="user-icon">
+        <a href="/Users/apple/Desktop/hoot moter_user/profile.html"><i class="fa-solid fa-user" ></i></a>
+        <span class="badge">7</span>
+      </div>
+    </div>
+    <script>
+      const nav = document.querySelector("nav");
+      const menuToggle = document.querySelector(".menu-toggle");
+
+      menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+
+
+  </nav>
+  <!--  End navbar -->
+
+  <div class="container py-4">
+
+    <!-- Steps Navigation -->
+
+    <div class="steps mb-5">
+      <div class="step-item active" data-num="1"><a href="product_tricycle.html">product</a></div>
+      <span class="step-line"></span>
+      <div class="step-item active" data-num="2"><a href="../checkout/basket.html">check out</a></div>
+      <span class="step-line"></span>
+      <div class="step-item active" data-num="3"><a href="../payment/payment.html">payment</a></div>
+    </div>
+
+    <!-- Main Big Card -->
+    <div class="big-card mb-5">
+      <div class="row mt-3">
+        <!-- Left Images -->
+        <div class="col-md-6 text-center left_images">
+          <img id="main-img" src="../cycle1.jpeg" class="img-fluid rounded mb-3"
+            style="height: 300px; object-fit: cover;">
+
+          <div class="d-flex justify-content-center gap-3">
+            <img src="../cycle_card.jpg" class="thumb-img active">
+            <img src="../cycle1.jpeg" class="thumb-img">
+            <img src="../cycle_card.jpg" class="thumb-img">
+          </div>
+        </div>
+        <!-- Right Info -->
+        <div class="col-md-6 right_info">
+          <div class="d-flex justify-content-between">
+            <div class="">
+              <h3>Cmg – A4</h3>
+              <div class="text-warning mb-1">★★★★★ <span class="text-dark">440+ review</span></div>
+            </div>
+            <div>
+              <!-- Heart Icon -->
+              <i class=" fa-regular fa-heart"></i>
+              <span class="icon-btn">+</span>
+            </div>
+          </div>
+          <p class="text-muted">
+            250CC engine, high-torque output, fuel-efficient single-cylinder...250CC engine, high-torque output,
+            fuel-efficient single-cylinder...
+          </p>
+
+          <div class="mid_content d-flex">
+            <div class="item ">
+              <p>type Motorcycle </p><small>string</small>
+            </div>
+            <div class=" item">
+              <p>Sport </p><small>5</small>
+            </div>
+            <div class=" item">
+              <p>capacity </p><small>Gasoline</small>
+            </div>
+            <div class="item ">
+              <p>2 person </p><small>70L</small>
+            </div>
+          </div>
+          <div class="BC_footer">
+            <div class="">
+              <h2 class="fw-bold mb-3">2500 EG / <small>day</small> </h2>
+              <small style="    text-decoration: line-through;">4500 EG</small>
+            </div>
+            <button class="btn btn-primary ">Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="review-box mb-5">
+      <div class="d-flex">
+        <h4>Reviews </h4>
+        <div class="reveiws_num ">13</div>
+      </div>
+      <!-- Review 1 -->
+      <div class="review-item">
+        <img src="../users/u4.jpeg" class="rounded-circle" width="55" height="55">
+
+        <div class="review-info">
+          <div class="review-top">
+            <div class="review-user">Alex Stanton</div>
+            <P></P>
+
+            <div class="review-meta">
+              <small>21 Aug 2024</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <p class="review-text">
+            Excellent motorbike, powerful and smooth to ride...
+          </p>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-item">
+        <img src="../users/u2.jpeg" class="rounded-circle" width="55" height="55">
+
+        <div class="review-info">
+          <div class="review-top">
+            <div class="review-user">Skyler Dias</div>
+
+            <div class="review-meta">
+              <small>10 May 2024</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <p class="review-text">
+            Great service, bike was clean and ready...
+          </p>
+        </div>
+      </div>
+
+      <!-- Add Review -->
+      <div class="footer_review mt-4 d-flex align-items-center ">
+        <input type="text" class="form-control review-input" placeholder="Write a message…">
+
+        <span class="icon-btn mx-3"><i class="fa-solid fa-image"></i></span>
+        <span class="icon-btn mx-3"><i class="fa-solid fa-file"></i></span>
+
+        <button class="btn btn-primary px-3">Send</button>
+      </div>
+
+    </div>
+
+    <!-- Recent Motorcycles -->
+    <h4 class="mb-3">Recent Motorcycles</h4>
+    <div class="row gy-4 mb-5">
+
+      <div class="col-md-4">
+        <div class="motor-card">
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle_card.jpg" alt="">
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="motor-card">
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle1.jpeg" alt="">
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="motor-card">
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle_card.jpg" alt="">
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Recommended Motorcycles -->
+    <h4 class="mb-3">Recommended Motorcycles</h4>
+    <div class="row gy-4 mb-5">
+
+      <div class="col-md-4">
+        <div class="motor-card">
+
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle1.jpeg" alt="">
+
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+
+
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="motor-card">
+
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle_card.jpg" alt="">
+
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+
+
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        <div class="motor-card">
+
+          <!-- Heart Icon -->
+          <i class="heart-icon fa-regular fa-heart"></i>
+
+          <!-- Title -->
+          <h5 class="mt-3 fw-semibold">Cmg – A4</h5>
+          <!-- Image -->
+          <img src="../cycle1.jpeg" alt="">
+
+          <!-- Icons Row -->
+          <div class="card-icons">
+            <div><i class="fa-solid fa-gas-pump"></i> 70L</div>
+            <div><i class="fa-solid fa-motorcycle"></i> Sport</div>
+            <div><i class="fa-solid fa-user-group"></i> 2</div>
+          </div>
+
+
+          <!-- Prices -->
+          <div class="price-section">
+            <span class="current-price">2500 EG</span> / day <br>
+            <span class="old-price">4500 EG</span>
+          </div>
+
+          <!-- Button -->
+          <button class="btn btn-outline-primary btn-card">Rent Now</button>
+
+        </div>
+      </div>
+
+    </div>
+    <script>
+      document.querySelectorAll(".heart-icon").forEach(icon => {
+        icon.addEventListener("click", () => {
+          icon.classList.toggle("active");
+
+          if (icon.classList.contains("fa-regular")) {
+            icon.classList.remove("fa-regular");
+            icon.classList.add("fa-solid");
+          } else {
+            icon.classList.add("fa-regular");
+            icon.classList.remove("fa-solid");
+          }
+        });
+      });
+    </script>
+
+  </div>
+
+  </div>
+  <script>
+    // Change Main Image
+    const thumbs = document.querySelectorAll(".thumb-img");
+    const mainImg = document.getElementById("main-img");
+
+    thumbs.forEach(t => {
+      t.onclick = () => {
+        document.querySelector(".thumb-img.active").classList.remove("active");
+        t.classList.add("active");
+        mainImg.src = t.src;
+      };
+    });
+  </script>
+
+
+
+  <!-- Location and Time -->
+  <section class="location-time py-5">
+    <div class="containerr">
+      <h2 class="mb-4 fw-semibold">Location And Time</h2>
+
+
+      <div class="map-wrapper position-relative">
+        <!-- Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.960650889958!2d31.235711!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1610721000000!5m2!1sen!2seg"
+          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- Floating Contact Box -->
+        <div class="contact-box shadow-lg bg-white p-4 rounded position-absolute top-50 start-50 translate-middle">
+          <h4 class="fw-semibold mb-2">Get in Touch</h4>
+          <p class="text-muted mb-3">Contact our Sales Department</p>
+          <div class="d-flex align-items-center mb-3 border rounded px-2 py-2">
+            <i class="bi bi-telephone text-primary me-2"></i>
+            <span>+201009896263</span>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li>Monday: 10:00–10:00</li>
+            <li>Tuesday: 10:00–10:00</li>
+            <li>Wednesday: 10:00–10:00</li>
+            <li>Thursday: 10:00–10:00</li>
+            <li>Friday: <strong class="text-danger">CLOSED</strong></li>
+            <li>Saturday: 10:00–10:00</li>
+            <li>Sunday: 10:00–10:00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5 pb-4">
+    <div class="container_footer">
+      <div class="row gy-4">
+        <!-- El Wakeel / Subscribe -->
+        <div class="col-md-3">
+          <h5 class="fw-semibold mb-3">El Wakeel</h5>
+          <p class="text-white-50 mb-3">Subscribe</p>
+          <p class="text-white-50">Get 10% off your first order</p>
+          <form class="d-flex">
+            <input type="email" class="form-control me-2" placeholder="Enter your email">
+            <button class="btn btn-primary">→</button>
+          </form>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Company</h6>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Quick Links</h6>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="#" class="text-white-50 text-decoration-none">Get In Touch</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Help Center</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">Live Chat</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none">How It Works</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Brands -->
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Our Brands</h6>
+          <ul class="list-unstyled text-white-50">
+            <li>Suzuki</li>
+            <li>Harley-Davidson</li>
+            <li>Kawasaki</li>
+            <li>Ducati</li>
+            <li>Peugeot</li>
+            <li>Volkswagen</li>
+          </ul>
+        </div>
+
+        <!-- Sale Hours -->
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3">Sale Hours</h6>
+          <ul class="list-unstyled text-white-50">
+            <li>Monday – Friday: 09:00AM – 06:00PM</li>
+            <li>Saturday: 09:00AM – 07:00PM</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+
+
+
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #cfcfcf; /* رمادي فاتح زي الصورة */
+  text-shadow:
+    0px 1px 1px rgba(0,0,0,0.3),
+    2px 2px 8px rgba(0,0,0,0.25); /* تأثير اللمعة والظل الناعم */
+  letter-spacing: 1px;
+  filter: blur(0.3px); /* ضباب خفيف يخليه ناعم زي الصورة */
+}
+
+/* الروابط */
+.nav-link {
+  color: #111;
+  font-weight: 500;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: #2563eb;
+}
+.nav-link.active {
+  color: #2563eb;
+}
+
+/* مربع البحث */
+.search-box {
+  position: relative;
+}
+.search-box input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-right: 35px;
+  height: 36px;
+  font-size: 14px;
+}
+.search-box .btn-search {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  border: none;
+  background: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* الأيقونات */
+.icon-link {
+  color: #111;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.icon-link:hover {
+  color: #2563eb;
+}
+
+/* أيقونة المستخدم */
+.user-icon {
+  background-color: #e74c3c;
+  color: #fff !important;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+}
+/* ---- Footer ---- */
+.container_footer {
+  /* background-color: #111; */
+  width: 80%;
+  margin: auto;
+}
+
+footer {
+  background-color: black;
+
+}
+
+footer h5,
+footer h6 {
+  color: #fff;
+}
+
+footer p,
+footer li,
+footer a {
+  font-size: 14px;
+}
+
+footer input.form-control {
+  background-color: #222;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+footer input::placeholder {
+  color: #aaa;
+}
+
+footer .btn {
+  background-color: transparent;
+  border: grey;
+}
+
+footer .btn:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+      position: static !important;
+      transform: none !important;
+      margin: 20px auto;
+  }
+}

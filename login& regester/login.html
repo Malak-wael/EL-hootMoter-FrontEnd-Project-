@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1 class="title">EL Hoot Motors</h1>
+    <div class="container">
+        <div class="form-box">
+            <h1>Log In</h1>
+            <form action="">
+                <label>Your Email</label>
+                <input type="email" required />
+                <label>Your Password</label>
+                <div class="password-field">
+                    <input type="password" required id="password" />
+                    <span class="toggle" id="togglePassword"><i class="fa-solid fa-eye"></i> Hide</span>
+                    <a href="" class="reternPassword">Forget your password</a>
+                </div>
+
+            </form>
+        </div>
+        <button type="submit" class="btn1">LOG IN</button>
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <div class="btn_logins">
+            <button type="submit" class="btn"><i class="fa-brands fa-facebook"></i> Login with Facebook</button>
+            <button type="submit" class="btn"><i class="fa-brands fa-google"></i> Login with Google</button>
+        </div>
+        <p class="login-text">Don't have an account? <a href="signup.html"> Sign up</a></p>
+
+        </form>
+    </div>
+    </div>
+
+    <script>
+        // عناصر التحكم
+        const toggle = document.getElementById("togglePassword");
+        const password = document.getElementById("password");
+        const icon = toggle.querySelector("i");
+        const text = toggle.querySelector(".text");
+
+        toggle.addEventListener("click", () => {
+            // تحديد نوع الحقل
+            const isHidden = password.getAttribute("type") === "password";
+            password.setAttribute("type", isHidden ? "text" : "password");
+
+            // تغيير الأيقونة
+            icon.classList.toggle("fa-eye");
+            icon.classList.toggle("fa-eye-slash");
+
+            // تغيير النص
+            text.textContent = isHidden ? "Hide" : "Show";
+        });
+    </script>
+    </div>
+</body>
+
+</html>

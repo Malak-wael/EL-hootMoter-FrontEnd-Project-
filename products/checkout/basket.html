@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basket.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <!--  Start navbar -->
+    <nav>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    
+        <div class="logo">EL Hoot Motors</div>
+        <div class="nav-links">
+            <a href="/Users/apple/Desktop/hoot moter_user/home.html">Home</a>
+            <a href="../products.html" class="active">Product</a>
+            <a href="/Users/apple/Desktop/hoot moter_user/aboute/about.html">About</a>
+            <a href="/Users/apple/Desktop/hoot moter_user/contact/contact.html">Contact</a>
+            <a href="/Users/apple/Desktop/hoot moter_user/offers/offers.html">Offers</a>
+        </div>
+        <div class="nav-icons">
+          <div class="search-box">
+            <input type="text" placeholder="What are you loking for ?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+    
+          <div class="icon">
+            <a href="/Users/apple/Desktop/hoot moter_user/favorite_products.html"><i class="fa-regular fa-heart" ></i></a>
+            <span class="badge">3</span>
+          </div>
+    
+          <div class="icon">
+            <a href="/Users/apple/Desktop/hoot moter_user/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <span class="badge">2</span>
+          </div>
+          <div class="user-icon">
+            <a href="/Users/apple/Desktop/hoot moter_user/profile.html"><i class="fa-solid fa-user" ></i></a>
+            <span class="badge">7</span>
+          </div>
+        </div>
+        <script>
+          const nav = document.querySelector("nav");
+          const menuToggle = document.querySelector(".menu-toggle");
+    
+          menuToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+          });
+        </script>
+    
+    
+      </nav>
+    <!--  End navbar -->
+
+
+
+    <div class="container py-5">
+
+        <!-- STEPS TOP BAR -->
+        <div class="steps mb-5">
+            <div class="step-item active" data-num="1"><a
+                    href="../product_motorCycle/product_motorCycle.html">product</a></div>
+            <span class="step-line"></span>
+            <div class="step-item active" data-num="2"><a href="./basket.html">check out</a></div>
+            <span class="step-line"></span>
+            <div class="step-item active" data-num="3"><a href="../payment/payment.html">payment</a></div>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- LEFT SIDE -->
+            <div class="col-lg-8">
+
+                <!-- Billing Info -->
+                <div class="left-card mb-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6 class="fw-bold">Billing Info</h6>
+                        <span class="small text-muted">Step 1 of 3</span>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="small text-muted">Name</label>
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="small text-muted">Phone Number</label>
+                            <input type="text" class="form-control" placeholder="Phone number">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="small text-muted">Address</label>
+                            <input type="text" class="form-control" placeholder="Address">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="small text-muted">Town / City</label>
+                            <input type="text" class="form-control" placeholder="Town or city">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="left-card mb-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6 class="fw-bold">Payment Method</h6>
+                        <span class="small text-muted">Step 2 of 3</span>
+                    </div>
+
+                    <!-- RADIO BUTTON 1 -->
+                    <label class="payment-option-label d-flex align-items-center gap-2">
+                        <input type="radio" name="payMethod" id="payRadioCard">
+                        <span>Credit Card</span>
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" width="40"
+                            class="ms-auto">
+                    </label>
+
+                    <!-- PAYMENT SECTION 1 -->
+                    <div id="paymentSectionCard" class="mt-4 p-4 border rounded-3 shadow-sm bg-white">
+
+                        <form id="pay_form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="pay-label">Card Number</label>
+                                    <input type="text" class="form-control pay-input" id="pay_card_number"
+                                        placeholder="Card number">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="pay-label">Expiration Date</label>
+                                    <input type="text" class="form-control pay-input" id="pay_expire"
+                                        placeholder="DD / MM / YY">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="pay-label">Card Holder</label>
+                                    <input type="text" class="form-control pay-input" id="pay_holder"
+                                        placeholder="Card holder">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="pay-label">CVC</label>
+                                    <input type="password" class="form-control pay-input" id="pay_cvc"
+                                        placeholder="CVC">
+                                </div>
+                            </div>
+
+                            <div class="pay-footer">
+                                <div>
+                                    <input type="checkbox" id="pay_save">
+                                    <label for="pay_save" class="ms-2">save Card Information</label>
+                                </div>
+
+                                <button type="button" id="pay_addBtn" class="pay-btn">Add Card</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- RADIO BUTTON 2 -->
+                    <label class="payment-option-label d-flex align-items-center gap-2 mt-4">
+                        <input type="radio" name="payMethod" id="payRadioWallet">
+                        <span>Wallet</span>
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/011/466/387/non_2x/cute-wallet-include-the-monet-credit-card-and-coin-isolated-cartoon-object-illustration-flat-style-suitable-for-sticker-icon-design-premium-logo-vector.jpg"
+                            width="40" class="ms-auto">
+                    </label>
+
+                    <!-- PAYMENT SECTION 2 -->
+                    <div id="paymentSectionWallet" class="mt-4 p-4 border rounded-3 shadow-sm bg-white">
+
+                        <h3 class="fw-bold">payment methods</h3>
+                        <p class="text-secondary">Choose payment method below</p>
+
+                        <div class="row text-center mb-4">
+
+                            <!-- Vodafone -->
+                            <div class="col-md-4">
+                                <label class="method-card d-block">
+                                    <img src="..." class="method-img">
+                                    <p class="mt-2 mb-1 fw-semibold">Vodafone cash</p>
+                                    <input type="radio" name="method" class="form-check-input mt-2">
+                                </label>
+                            </div>
+
+                            <!-- Etisalat -->
+                            <div class="col-md-4">
+                                <label class="method-card d-block">
+                                    <img src="..." class="method-img">
+                                    <p class="mt-2 mb-1 fw-semibold">Etisalat cash</p>
+                                    <input type="radio" name="method" class="form-check-input mt-2">
+                                </label>
+                            </div>
+
+                            <!-- Orange -->
+                            <div class="col-md-4">
+                                <label class="method-card d-block">
+                                    <img src="..." class="method-img">
+                                    <p class="mt-2 mb-1 fw-semibold">Orange cash</p>
+                                    <input type="radio" name="method" class="form-check-input mt-2">
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <h5 class="fw-bold">upload photo</h5>
+                        <p class="text-secondary">Create new payment</p>
+
+                        <div class="alert alert-light border">
+                            1- transaction money on number : +2010096432589 <br>
+                            2- After transaction money please upload photo
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">first Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <label class="form-label">moto cycle Brands</label>
+                        <select class="form-select mb-4">
+                            <option>Choice 1</option>
+                            <option>Choice 2</option>
+                            <option>Choice 3</option>
+                        </select>
+
+                        <label class="fw-semibold">Starting File</label>
+                        <div class="upload-box mb-4">
+                            <p class="m-0">
+                                Click to upload or drag and drop <br>
+                                SVG, PNG, JPG or GIF <br>
+                                (max. 800×400px)
+                            </p>
+                            <input type="file" class="form-control mt-3">
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-light px-4">Cancel</button>
+                            <button class="btn btn-primary px-4">send invoice</button>
+                        </div>
+
+                    </div>
+
+                    <!-- RADIO BUTTON 3 -->
+                    <label class="payment-option-label d-flex align-items-center gap-2 mt-4">
+                        <input type="radio" name="payMethod" id="payRadioPost">
+                        <span>Egyptian Post</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Post_Logo.svg/40px-Post_Logo.svg.png"
+                            width="40" class="ms-auto">
+                    </label>
+
+                    <!-- PAYMENT SECTION 3 -->
+                    <div id="paymentSectionPost" class="mt-4 p-4 border rounded-3 shadow-sm bg-white">
+                        <h5 class="fw-bold">upload photo</h5>
+                        <p class="text-secondary">Create new payment</p>
+
+                        <div class="alert alert-light border">
+                            1- transaction money on number : +2010096432589 <br>
+                            2- After transaction money please upload photo
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">first Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <label class="form-label">moto cycle Brands</label>
+                        <select class="form-select mb-4">
+                            <option>Choice 1</option>
+                            <option>Choice 2</option>
+                            <option>Choice 3</option>
+                        </select>
+
+                        <label class="fw-semibold">Starting File</label>
+                        <div class="upload-box mb-4">
+                            <p class="m-0">
+                                Click to upload or drag and drop <br>
+                                SVG, PNG, JPG or GIF <br>
+                                (max. 800×400px)
+                            </p>
+                            <input type="file" class="form-control mt-3">
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-light px-4">Cancel</button>
+                            <button class="btn btn-primary px-4">send invoice</button>
+                        </div>
+
+                    </div>
+
+                    <!-- RADIO BUTTON 4 -->
+                    <label class="payment-option-label d-flex align-items-center gap-2 mt-4">
+                        <input type="radio" name="payMethod" id="payRadioCash">
+                        <span>Cash in Site</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cash_icon.svg/40px-Cash_icon.svg.png"
+                            width="40" class="ms-auto">
+                    </label>
+
+                    <!-- PAYMENT SECTION 4 -->
+                    <div id="paymentSectionCash" class="mt-4 p-4 border rounded-3 shadow-sm bg-white">
+                        <h5 class="fw-bold">upload photo</h5>
+                        <p class="text-secondary">Create new payment</p>
+
+                        <div class="alert alert-light border">
+                            1- transaction money on number : +2010096432589 <br>
+                            2- After transaction money please upload photo
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">first Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <label class="form-label">moto cycle Brands</label>
+                        <select class="form-select mb-4">
+                            <option>Choice 1</option>
+                            <option>Choice 2</option>
+                            <option>Choice 3</option>
+                        </select>
+
+                        <label class="fw-semibold">Starting File</label>
+                        <div class="upload-box mb-4">
+                            <p class="m-0">
+                                Click to upload or drag and drop <br>
+                                SVG, PNG, JPG or GIF <br>
+                                (max. 800×400px)
+                            </p>
+                            <input type="file" class="form-control mt-3">
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button class="btn btn-light px-4">Cancel</button>
+                            <button class="btn btn-primary px-4">send invoice</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Confirmation -->
+                <div class="left-card mb-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h6 class="fw-bold">Confirmation</h6>
+                        <span class="small text-muted">Step 3 of 3</span>
+                    </div>
+
+                    <p class="small text-muted">We are getting to the end. Just a few clicks and your rental is ready!
+                    </p>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label small">I agree with sending me Marketing and newsletter
+                            emails.</label>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label small">I agree with our terms and conditions and privacy
+                            policy.</label>
+                    </div>
+
+                    <button class="btn btn-rent">Rent Now</button>
+                    <button class="btn-return ms-3"> ← Return to cart</button>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-4">
+
+                <!-- Repeated Summary Cards -->
+                <div class="summary-card">
+                    <h6 class="fw-bold">Rental Summary</h6>
+                    <p class="small text-muted">Prices may change depending on the length of the rental.</p>
+
+                    <div class="d-flex align-items-center mt-2">
+                        <img src="https://www.dumyah.com/image/cache/data/PartnerPortal/integration/request/4/6251646167365_0_1753806847-800x800.webp"
+                            class="summary-img me-3">
+
+                        <div>
+                            <h6 class="fw-bold m-0">Nissan GT – R</h6>
+                            <span class="text-muted small">$80.02</span><br>
+                            <span class="text-warning small">⭐⭐⭐⭐⭐</span>
+                            <span class="text-muted small">440+ Reviewer</span>
+                        </div>
+
+                        <span class="remove-btn ms-auto"> <i class="fa-solid fa-trash"></i> </span>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- Total Box -->
+                <div class="total-box mt-3">
+
+                    <div class="total-row">
+                        <span class="text-muted small">Subtotal</span>
+                        <strong>3500000 EG</strong>
+                    </div>
+
+                    <div class="total-row">
+                        <span class="text-muted small">Tax</span>
+                        <strong>0 EG</strong>
+                    </div>
+
+                    <!-- Coupon -->
+                    <label class="small text-muted">Coupon Codes</label>
+                    <div class="coupon">
+                        <input type="text" class="form-control" placeholder="Enter your coupon">
+                        <button class="btn-apply">→</button>
+                    </div>
+
+                    <hr>
+
+                    <div class="total-row">
+                        <span class="fw-bold">Total Rental Price</span>
+                        <strong class="text-primary">35000000EG</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        // Get radios
+        const radioCard = document.getElementById("payRadioCard");
+        const radioWallet = document.getElementById("payRadioWallet");
+
+        // Get sections
+        const sectionCard = document.getElementById("paymentSectionCard");
+        const sectionWallet = document.getElementById("paymentSectionWallet");
+
+        // Hide all sections at start
+        sectionCard.style.display = "none";
+        sectionWallet.style.display = "none";
+
+        // When Credit Card selected
+        radioCard.addEventListener("change", () => {
+            if (radioCard.checked) {
+                sectionCard.style.display = "block";
+                sectionWallet.style.display = "none";
+            }
+        });
+
+        // When Wallet selected
+        radioWallet.addEventListener("change", () => {
+            if (radioWallet.checked) {
+                sectionWallet.style.display = "block";
+                sectionCard.style.display = "none";
+            }
+        });
+
+
+
+
+        const radioPost = document.getElementById("payRadioPost");
+        const radioCash = document.getElementById("payRadioCash");
+
+        const sectionPost = document.getElementById("paymentSectionPost");
+        const sectionCash = document.getElementById("paymentSectionCash");
+
+        // Hide new sections at start
+        sectionPost.style.display = "none";
+        sectionCash.style.display = "none";
+
+        // Egyptian Post selected
+        radioPost.addEventListener("change", () => {
+            if (radioPost.checked) {
+                sectionPost.style.display = "block";
+                sectionCard.style.display = "none";
+                sectionWallet.style.display = "none";
+                sectionCash.style.display = "none";
+            }
+        });
+
+        // Cash in Site selected
+        radioCash.addEventListener("change", () => {
+            if (radioCash.checked) {
+                sectionCash.style.display = "block";
+                sectionCard.style.display = "none";
+                sectionWallet.style.display = "none";
+                sectionPost.style.display = "none";
+            }
+        });
+
+    </script>
+    <!-- Location and Time -->
+    <section class="location-time py-5">
+        <div class="containerr">
+            <h2 class="mb-4 fw-semibold">Location And Time</h2>
+
+
+            <div class="map-wrapper position-relative">
+                <!-- Google Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.960650889958!2d31.235711!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzQwLjAiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1610721000000!5m2!1sen!2seg"
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <!-- Floating Contact Box -->
+                <div
+                    class="contact-box shadow-lg bg-white p-4 rounded position-absolute top-50 start-50 translate-middle">
+                    <h4 class="fw-semibold mb-2">Get in Touch</h4>
+                    <p class="text-muted mb-3">Contact our Sales Department</p>
+                    <div class="d-flex align-items-center mb-3 border rounded px-2 py-2">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <span>+201009896263</span>
+                    </div>
+                    <ul class="list-unstyled mb-0">
+                        <li>Monday: 10:00–10:00</li>
+                        <li>Tuesday: 10:00–10:00</li>
+                        <li>Wednesday: 10:00–10:00</li>
+                        <li>Thursday: 10:00–10:00</li>
+                        <li>Friday: <strong class="text-danger">CLOSED</strong></li>
+                        <li>Saturday: 10:00–10:00</li>
+                        <li>Sunday: 10:00–10:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container_footer">
+            <div class="row gy-4">
+                <!-- El Wakeel / Subscribe -->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold mb-3">El Wakeel</h5>
+                    <p class="text-white-50 mb-3">Subscribe</p>
+                    <p class="text-white-50">Get 10% off your first order</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email">
+                        <button class="btn btn-primary">→</button>
+                    </form>
+                </div>
+
+                <!-- Company -->
+                <div class="col-md-2">
+                    <h6 class="fw-semibold mb-3">Company</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">FAQs</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h6 class="fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Get In Touch</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Live Chat</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">How It Works</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Brands -->
+                <div class="col-md-2">
+                    <h6 class="fw-semibold mb-3">Our Brands</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li>Suzuki</li>
+                        <li>Harley-Davidson</li>
+                        <li>Kawasaki</li>
+                        <li>Ducati</li>
+                        <li>Peugeot</li>
+                        <li>Volkswagen</li>
+                    </ul>
+                </div>
+
+                <!-- Sale Hours -->
+                <div class="col-md-3">
+                    <h6 class="fw-semibold mb-3">Sale Hours</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li>Monday – Friday: 09:00AM – 06:00PM</li>
+                        <li>Saturday: 09:00AM – 07:00PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</body>
+
+</html>

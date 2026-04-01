@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("images/login_signup.png") no-repeat right center / cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.title{
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+.container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 95vh;
+    margin: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #d3cfcf;
+    border-radius: 10px;
+    outline: none;
+}
+
+.f-rules p {
+    margin-right: 40px;
+    margin-bottom: 15px;
+
+}
+
+.s-rules p {
+    margin-right: 40px;
+    margin-bottom: 15px;
+
+}
+
+.rules {
+    margin-right: 40px;
+    color: #858383;
+    font-size: medium;
+    display: flex;
+
+}
+
+
+.password-field {
+    position: relative;
+}
+
+.password-field span {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: smaller;
+    color: #858383;
+}
+
+.checkbox input,
+label {
+    font-size: 18px;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+button {
+    width: 30%;
+    background: #ccc;
+    color: white;
+    font-size: medium;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #999;
+}
+
+.login-text {
+    font-size: 13px;
+    color: #5d5959;
+    margin-top: 10px;
+
+}
+
+.login-text a {
+    color: #0e0d0d;
+
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}

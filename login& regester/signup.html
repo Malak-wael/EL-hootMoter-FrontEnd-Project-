@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <h1 class="title">EL Hoot Motors</h1>
+  <div class="container">
+    <div class="form-box">
+      <h1>Sign up</h1>
+
+      <form action="">
+        <label>Email</label>
+        <input type="email" required />
+
+        <label>Username</label>
+        <input type="text" required />
+
+        <label>Password</label>
+        <div class="password-field">
+          <input type="password" required id="password"/>
+          <span class="toggle" id="togglePassword"><i class="fa-solid fa-eye"></i> Hide</span>
+        </div>
+
+        <div class="rules">
+          <span class="f-rules">
+            <p>• Use 8 or more characters </p>
+            <p>• One number </p>
+          </span>
+          <span class="s-rules">
+            <p>• One uppercase </p>
+            <p>• one special character </p>
+          </span>
+          <p>• one lowercase </p>
+
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="" />
+          <label for="">we want to receive emails about the product , feature, updates and  event promotions</label>
+        </div>
+        <p style="    color: #858383; font-size: 15px;">By creating an account you agree to the <a href="" style="color: black; margin-bottom: 5px;"> Terms of use</a> and <a href="" style="color: black;margin-bottom: 5px;">Privacy policy</a></p>
+
+        <button type="submit" class="btn">Create an account</button>
+
+        <p class="login-text">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+
+    <script>
+      // عناصر التحكم
+      const toggle = document.getElementById("togglePassword");
+      const password = document.getElementById("password");
+      const icon = toggle.querySelector("i");
+      const text = toggle.querySelector(".text");
+    
+      toggle.addEventListener("click", () => {
+        // تحديد نوع الحقل
+        const isHidden = password.getAttribute("type") === "password";
+        password.setAttribute("type", isHidden ? "text" : "password");
+    
+        // تغيير الأيقونة
+        icon.classList.toggle("fa-eye");
+        icon.classList.toggle("fa-eye-slash");
+    
+        // تغيير النص
+        text.textContent = isHidden ? "Hide" : "Show";
+      });
+    </script>
+  </div>
+</body>
+
+</html>
